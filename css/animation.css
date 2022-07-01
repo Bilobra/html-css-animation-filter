@@ -128,3 +128,104 @@
 
 
 /* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: topwhite 2s linear;
+}
+
+@keyframes topwhite {
+    0%{
+        left: 20px;
+    }
+
+    50%{
+        left: 130px;
+    }
+
+    100%{
+        left: 20px;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: bottomwhite 2s linear;
+}
+
+@keyframes bottomwhite {
+    0%{
+        right: 20px;
+    }
+
+    50%{
+        right: 130px;
+    }
+
+    100%{
+        right: 20px;
+    }
+}
+
+
+/* esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: topwhitex 2s linear;
+}
+@keyframes topwhitex {
+    0% {
+        left: 10%;     
+        top: -10px;
+    }   /*  stato di partenza, posizione originale*/
+    30% {
+        left: calc(100% - 30px); 
+        top: -10px;
+        /* sposto metà del div nel bordo del contenitore mantenendo il top di partenza*/
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+
+        /*sposto metà div nel bordo contenitore ma abbassando al 100% il top */
+    }
+    75% {
+        left: 0;
+        top: 100%;
+        /* partenza da angolo dx in basso*/
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+        /* si avvicina all'angolo sx rimanendo sul lato inferiore del contenitore*/
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+
+        /*torna nella posizione di partenza*/
+    }
+}
+
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottonwhitex 2s linear;
+}
+@keyframes bottonwhitex {
+    0% {
+       
+    }
+    30% {
+       
+    }
+    45% {
+       
+    }
+    75% {
+       
+    }
+    90% {
+        
+    }
+    100% {
+       
+    }
+}
